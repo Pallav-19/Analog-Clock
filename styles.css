@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    background-color: #22567081;
+}
+.clock{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    border: solid 0.4rem rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #225670;
+    background-image: url(clock.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20rem 20rem;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.10),
+               inset 0 -15px 15px rgba(255, 255, 255, 0.10),
+               0 15px 15px rgba(255, 255, 255, 0.1),
+               inset 0 15px 15px rgba(255, 255, 255, 0.1) ;
+}
+.hour,.minute,.second{
+    width: 45%;
+    height: 0.25rem;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    /* transition: all 0.005s ease-in; */
+    
+
+}
+.hour{
+    /* transform: rotate(10deg); */
+    height: 0.3rem;
+    width: 25%;
+    margin-left: 25%;
+    background-color: rgb(253, 5, 121);
+}
+.second{
+    height: 0.10rem;
+    /* transform: rotate(20deg); */
+    margin-left: 5%;
+    background-color: rgb(0, 0, 0);
+
+}
+.minute{
+    margin-left: 5%;
+    background-color: rgb(0, 162, 255);
+}
+.clock:before{
+    content: " ";
+    height: 1rem;
+    width: 1rem;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    border-radius: 50%;
+
+}
+h1{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    color: #304853;
+    text-align: center;
+    font-size: 10rem;
+    margin-top: -1rem;
+}
